@@ -1,0 +1,8 @@
+# I found this gitignore template online; hope it's ok
+
+__pycache__/
+*.py[cod]
+*.log
+db.sqlite3
+.DS_Store
+Thumbs.db

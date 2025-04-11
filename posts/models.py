@@ -13,4 +13,4 @@ class Post(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"Post {self.title} by {self.author.user.username}"
+        return f"{self.title} [by: {self.author.user.username}]"

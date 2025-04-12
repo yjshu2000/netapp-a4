@@ -45,14 +45,14 @@ const getData = () => {
                                     <a href="#" class="btn btn-primary">Details</a>
                                 </div>
                                 <div class="col-2">
-                                    <a href="#" class="btn btn-primary">Like</a>
+                                    <a href="#" class="btn btn-primary">${el.liked ? `Unlike (${el.count})`: `Like (${el.count})`}</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     `
                 });
-            }, 1000)
+            }, 200)
             console.log(response.size);
             if (response.size === 0 ) {
                 endBox.textContent = "No posts added yet.";

@@ -170,6 +170,7 @@ postForm.addEventListener('submit', (e) => {
                 likeUnlikePosts();
                 $('#addPostModal').modal('hide');
                 handleAlerts('success', 'Post added successfully!');
+                postForm.reset();
         },
         error: function(error) {
             console.error("Error:", error);
